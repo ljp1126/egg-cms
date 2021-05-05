@@ -1,7 +1,5 @@
 # cms
 
-
-
 ## QuickStart
 
 <!-- add docs here for user -->
@@ -11,7 +9,9 @@ see [egg docs][egg] for more detail.
 ### Development
 
 ```bash
-$ npm i
+$ git clone https://github.com/ljp1126/egg-cms.git
+$ cd egg-cms
+$ npm i or yarn
 $ npm run dev
 $ open http://localhost:7001/
 ```
