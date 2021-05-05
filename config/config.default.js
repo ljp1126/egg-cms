@@ -18,6 +18,14 @@ module.exports = appInfo => {
   // add your middleware config here
   config.middleware = [];
 
+  //多模板引擎配置
+  config.view = {
+    mapping: {
+      '.html': 'ejs',
+      '.nj': 'nunjucks'
+    },
+  };
+
   // add your user config here
   const userConfig = {
     // myAppName: 'egg',
