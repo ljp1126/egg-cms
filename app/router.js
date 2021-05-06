@@ -9,6 +9,9 @@ module.exports = app => {
 
   // 登录
   router.get('/admin/login', controller.admin.login.index);
+  router.get('/admin/doLogin', controller.admin.login.doLogin);
+
+  router.get('/admin/verify', controller.admin.base.verify);
 
   // 用户管理
   router.get('/admin/manager', controller.admin.manager.index);

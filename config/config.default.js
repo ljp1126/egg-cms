@@ -15,6 +15,14 @@ module.exports = appInfo => {
   // use for cookie sign key, should change to your own and keep security
   config.keys = appInfo.name + '_1620222398014_500';
 
+  config.session={
+    key:'SESSION_ID',
+    maxAge:864000,
+    httpOnly: true,
+    encrypt: true,
+    renew: true //延长会话有效期 
+  }
+
   // add your middleware config here
   config.middleware = [];
 
